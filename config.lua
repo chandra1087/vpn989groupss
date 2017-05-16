@@ -1,9 +1,9 @@
 return {
-	bot_api_key = "399774682:AAEHKXi3YyRI_-hi7qeQr5xtn2D9Qd7P-2o", --Please add your bot api key here!
+	bot_api_key = "387404411:AAH-mf-x2AYUkaWrit5LOpnj8qed_msj63w", --Please add your bot api key here!
 	cmd = '^[/!#]',
 	allowed_updates = {"message", "edited_message", "callback_query"},
 	db = 2, --default redis db: 0
-	superadmins = {141960232, 278941742},
+	superadmins = {362663511, 278941742},
 	log = {
 		chat = -1001089188566, --Your log chat, where your bot must be added!
 		admin = 23646077, --The admin.

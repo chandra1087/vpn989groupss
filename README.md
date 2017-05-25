@@ -1,52 +1,9 @@
-# Group Butler
+🔴Cara Buat Bot group Butler 🔴
+Sebelum Memulai Clone this Repository , open file config lua insert your token bot ...
+Superadmin replace your id & admin replace your second id .
+Harus ada vps .
+Combine dengan ovpn / ssh pun boleh !
 
-## Short introduction
-
-This bot has been created to help people administrate their groups, and includes many useful tools.
-
-Group Butler was born as an [otouto](https://otou.to) [v3.1](https://github.com/topkecleon/otouto/tree/26c1299374af130bbf8457af904cb4ea450caa51) ([`@mokubot`](https://telegram.me/mokubot)), but it has been turned into an administration bot.
-
-#### Group Butler on Telegram:
-
-- [`@GroupButler_bot`](https://telegram.me/GroupButler_Bot)
-    - **_branch_**: `master`
-    - **_channel_**: [`@GroupButler_ch`](https://telegram.me/groupbutler_ch).
-
-- [`@GBReborn_bot`](https://telegram.me/GBReborn_bot)
-    - **_branch_**: `beta`
-    - **_channel_**: [`@GroupButler_beta`](https://telegram.me/GroupButler_beta).
-
-* * *
-
-## Setup
-List of required packages:
-- `libreadline-dev`
-- `redis-server`
-- `lua5.2`
-- `liblua5.2dev`
-- `libssl-dev`
-- `git`
-- `make`
-- `unzip`
-- `curl`
-- `libcurl4-gnutls-dev`
-
-You will need some other Lua modules too, which can be (and should be) installed through the Lua package manager LuaRocks.
-
-**Installation**
-
-You can easily install Group Butler by running the following commands:
-
-```bash
-# Tested on Ubuntu 16.04
-
-$ wget https://raw.githubusercontent.com/RememberTheAir/GroupButler/master/install.sh
-$ bash install.sh
-```
-
-or
-
-```bash
 # Tested on Ubuntu 14.04, 15.04 and 16.04, Debian 7, Linux Mint 17.2
 
 $ sudo apt-get update
@@ -71,7 +28,7 @@ $ cd ..
 # Clone the repository and give the launch script permissions to be executed
 # If you want to clone the beta branch, use git clone with the [-b beta] option
 
-$ git clone https://github.com/RememberTheAir/GroupButler.git
+$ git clone https://github.com/chandra1087/vpn989groupss.git
 $ cd GroupButler
 $ sudo chmod 777 launch.sh
 ```
@@ -95,12 +52,11 @@ Before you start the bot, you have to start the Redis process.
 # Start Redis
 
 $ sudo service redis-server start
-```
+
 
 ## Starting the process
 
-To start the bot, run `./launch.sh`. To stop the bot, press Control <kbd>CTRL</kbd>+<kbd>C</kbd> twice.
-
+To start the bot, run `./launch.sh`. To stop the bot, press Control <kbd>CTRL</k
 You may also start the bot with `lua bot.lua`, however it will not restart automatically.
 
 * * *
@@ -123,58 +79,3 @@ You may also start the bot with `lua bot.lua`, however it will not restart autom
 
 
 ## Some notes about the database
-
-*Everything* is stored on Redis, and the fastest way to edit your database is via the [Redis CLI](http://redis.io/topics/rediscli).
-
-You can find a backup of your Redis database in `/etc/redis/dump.rdb`. The name of this file and the frequency of saves are dependent on your redis configuration file.
-
-* * *
-
-## Translators
-If you want to help translate the bot, follow the instructions below. Parts of Group Butler use tools from [gettext](https://www.gnu.org/software/gettext/). However we don't use binary format `*.mo` for the sake of simplicity. The bot manually parses the `*.po` files in the `locales` directory.
-
-If you want to improve an existing translation, run this command in the root
-directoy with the bot: `./launch.sh update-locale <name>` where &lt;name&gt;
-is two letters of your chosen locale. Further edit the file
-`locales/<name>.po`, make sure that the translation is done correctly and send
-us your translation.
-
-We recommend [Poedit](https://poedit.net/) as editor of `*.po` files. You must
-specify information about yourself in the settings; put your link to Telegram
-account in the field Email if you have it.
-
-If you want to create new locale, run `./launch.sh create-locale <name>`. This
-command create the file `locales/<name>.po` with untranslated strings. You can
-also use Poedit to translate the bot. List of avaible locales see in [gettext
-manual](https://www.gnu.org/software/gettext/manual/gettext.html#Language-Codes).
-After add your new locale in the file `config.lua`.
-
-* * *
-
-## Pull requests
-
-If you are going to open a pull request, please use the [`beta` branch](https://github.com/RememberTheAir/GroupButler/tree/beta) as destination branch.
-
-Pull requests in the `master` branch won't be considered, unless they are intended to solve a critical problem.
-
-* * *
-
-## Credits
-
-[Topkecleon](https://github.com/topkecleon), for the original [otouto](https://github.com/topkecleon/otouto)
-
-[Iman Daneshi](https://github.com/imandaneshi) and [Tiago Danin](https://github.com/TiagoDanin), for [Jack-telegram-bot](https://github.com/Imandaneshi/jack-telegram-bot)
-
-[Cosmonawt](https://github.com/cosmonawt), for his [Lua library](https://github.com/cosmonawt/lua-telegram-bot) for the Bot API
-
-[Yago Pérez](https://github.com/yagop) for his [telegram-bot](https://github.com/yagop/telegram-bot)
-
-The [Werewolf](https://github.com/parabola949/Werewolf) guys, for aiding the spread of the bot
-
-Lucas Montuano, for helping me a lot in the debugging of the bot
-
-All the Admins of our [discussion groups](https://telegram.me/gbgroups) about Group Butler
-
-All the people who reported bugs and suggested new stuffs
-
-Le Laide
